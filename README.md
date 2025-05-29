@@ -1,4 +1,5 @@
 Aplicación de Predicción de Depresión 🧠💙
+
 Una aplicación móvil Android desarrollada en Kotlin con Jetpack Compose que utiliza algoritmos de inteligencia artificial para evaluar el riesgo de depresión basándose en múltiples factores psicosociales. Este proyecto forma parte de un sistema integral de detección temprana de depresión en estudiantes universitarios.
 🎯 Objetivo del Proyecto
 Objetivo General: Desarrollar un modelo de inteligencia artificial para predecir la presencia e intensidad de la depresión en estudiantes, facilitando su detección temprana mediante aplicaciones accesibles y herramientas de análisis.
