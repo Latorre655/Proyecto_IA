@@ -102,6 +102,7 @@ implementation 'androidx.activity:activity-compose:1.8.1'
 // Icons
 implementation 'androidx.compose.material:material-icons-core'
 implementation 'androidx.compose.material:material-icons-extended'
+```
 
 ## 🧮 Algoritmo de Predicción
 
@@ -164,8 +165,8 @@ Si experimentas síntomas de depresión, consulta con un profesional calificado 
 **UNAB** – Universidad Autónoma de Bucaramanga  
 📚 Proyecto de Inteligencia Artificial  
 
-- 🌐 GitHub: `ProyectoIA`  
-- 📊 Google Colab: *Notebook del Proyecto*
+- 🌐 GitHub: `https://github.com/Latorre655/Proyecto_IA`  
+- 📊 Google Colab: `https://colab.research.google.com/drive/1hJ8nfP1df4SKBU4eR9kdYNI-zMpAkVPB?usp=sharing`
 
 ---
 
@@ -176,3 +177,4 @@ Este proyecto forma parte de un ecosistema más amplio de herramientas para la d
 - 🧠 **Modelo ML en Python:** Desarrollo del algoritmo base usando `scikit-learn`  
 - 📱 **Aplicación Móvil:** Implementación en Android/Kotlin para uso cotidiano  
 - 📓 **Notebook de Investigación:** Análisis y experimentación en Google Colab
+
