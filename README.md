@@ -102,3 +102,77 @@ implementation 'androidx.activity:activity-compose:1.8.1'
 // Icons
 implementation 'androidx.compose.material:material-icons-core'
 implementation 'androidx.compose.material:material-icons-extended'
+
+## 🧮 Algoritmo de Predicción
+
+La aplicación utiliza un algoritmo basado en **regresión logística** con **función sigmoide**:
+
+### 📐 Fórmula Principal
+
+Probabilidad = 1 / (1 + e^(-puntuación_riesgo))
+
+
+---
+
+### 🔺 Factores de Riesgo (Aumentan la puntuación)
+
+- **Pensamientos Suicidas:** +3.0 puntos  
+- **Historial Familiar:** +1.2 puntos  
+- **Alta Presión Académica:** `(valor - 3.5) × 0.8`  
+- **Alta Presión Laboral:** `(valor - 3.5) × 0.7`  
+- **Estrés Financiero:** `(valor - 3.0) × 0.6`  
+- **Problemas de Sueño:** *Variable según duración*  
+- **Exceso de Trabajo:** `(horas - 12) × 0.2`  
+
+---
+
+### 🛡️ Factores Protectores (Reducen la puntuación)
+
+- **Alta Satisfacción con Estudios:** `(valor - 4.0) × -0.8`  
+- **Alta Satisfacción Laboral:** `(valor - 4.0) × -0.7`  
+- **Buenos Hábitos Alimenticios:** `(valor - 4.0) × -0.5`  
+- **Buen Rendimiento Académico (CGPA):** `(cgpa - 3.5) × -0.6`  
+- **Sueño Óptimo (7-8 hrs):** `-0.5 puntos`  
+
+---
+
+## ⚠️ Consideraciones Importantes
+
+### 🔒 Limitaciones
+
+- **No es un diagnóstico médico:** Esta aplicación es solo para fines educativos.  
+- **Consulta profesional:** Siempre busca ayuda de profesionales de la salud mental.  
+- **Algoritmo simplificado:** Basado en factores generales, no en modelos clínicos.
+
+---
+
+### 📝 Descargo de Responsabilidad
+
+Esta aplicación **no reemplaza** la evaluación profesional de salud mental.  
+El modelo está limitado a la predicción basada en datos recolectados y **no constituye un diagnóstico clínico profesional**.  
+Si experimentas síntomas de depresión, consulta con un profesional calificado en salud mental.
+
+---
+
+## 👨‍💻 Autores
+
+- **Johan Andrés Latorre**  
+- **Andrey David Morales**  
+
+### 🎓 Universidad
+
+**UNAB** – Universidad Autónoma de Bucaramanga  
+📚 Proyecto de Inteligencia Artificial  
+
+- 🌐 GitHub: `ProyectoIA`  
+- 📊 Google Colab: *Notebook del Proyecto*
+
+---
+
+## 🔗 Recursos Relacionados
+
+Este proyecto forma parte de un ecosistema más amplio de herramientas para la detección de depresión:
+
+- 🧠 **Modelo ML en Python:** Desarrollo del algoritmo base usando `scikit-learn`  
+- 📱 **Aplicación Móvil:** Implementación en Android/Kotlin para uso cotidiano  
+- 📓 **Notebook de Investigación:** Análisis y experimentación en Google Colab
